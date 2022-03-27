@@ -1,0 +1,36 @@
+{
+  "name": "react-ts",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "7.17.8",
+    "@emotion/react": "11.8.2",
+    "@emotion/styled": "11.8.1",
+    "@mui/icons-material": "5.5.1",
+    "@mui/material": "5.5.2",
+    "@mui/styles": "^5.5.1",
+    "@types/jest": "^27.4.1",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.14",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1"
+  },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "react-scripts-ts": "latest"
+  }
+}
