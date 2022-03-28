@@ -28,7 +28,7 @@ const View = (props) => {
 
     const diff = timeleft - now;
     const isTimeout = diff < 0;
-
+    console.log('isTimeout', isTimeout, timeleft);
     if (isTimeout && isLoggedIn) {
       dispatch({ type: 'SET_LOGGEDIN', payload: false });
 
