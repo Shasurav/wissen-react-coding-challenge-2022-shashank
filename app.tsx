@@ -12,7 +12,7 @@ const Start = () => {
   useEffect(() => {
     if (localStorage.getItem('token'))
       dispatch({ type: 'SET_LOGGEDIN', payload: true });
-  });
+  }, []);
   return (
     <Fragment>
       {!isLoggedIn && <Login />}
