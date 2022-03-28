@@ -66,7 +66,6 @@ const Login = (props) => {
         })
         .catch((e) =>
           e.json().then((json: any) => {
-            console.log(json);
             dispatch({ type: 'SET_STATUS', payload: json.error });
           })
         )

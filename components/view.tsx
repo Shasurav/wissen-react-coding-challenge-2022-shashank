@@ -25,13 +25,10 @@ const View = (props) => {
   const check = () => {
     const now = Date.now();
     const timeleft = expireTime + 1 * 60 * 1000;
-
     const diff = timeleft - now;
     const isTimeout = diff < 0;
-    console.log('isTimeout', isTimeout, timeleft);
     if (isTimeout && isLoggedIn) {
       dispatch({ type: 'SET_LOGGEDIN', payload: false });
-
       localStorage.clear();
     }
   };
@@ -59,11 +56,7 @@ const View = (props) => {
   }, [users]);
 
   useEffect(() => {
-    console.log(expireTime);
-
     setInterval(() => {
-      console.log('nnnnnnnnnn');
-
       check();
     }, 500);
   }, []);

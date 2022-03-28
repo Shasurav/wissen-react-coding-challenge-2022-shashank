@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const userReducer = (state = initialState, action) => {
-  console.log(action.type);
   switch (action.type) {
     case 'SET_USER':
       return {
@@ -14,7 +13,6 @@ const userReducer = (state = initialState, action) => {
         users: action.payload,
       };
     case 'SET_LOGGEDIN':
-      console.log('vvvvvvvvvvvvvv');
       return {
         ...state,
         isLoggedIn: action.payload,
@@ -25,7 +23,6 @@ const userReducer = (state = initialState, action) => {
         status: action.payload,
       };
     case 'SET_TIMER':
-      console.log('called', action.payload);
       return {
         ...state,
         expireTimer: action.payload,
