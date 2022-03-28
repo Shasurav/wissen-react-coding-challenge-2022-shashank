@@ -24,7 +24,7 @@ const View = (props) => {
 
   const check = () => {
     const now = Date.now();
-    const timeleft = expireTime + 5 * 60 * 1000;
+    const timeleft = expireTime + 1 * 60 * 1000;
 
     const diff = timeleft - now;
     const isTimeout = diff < 0;
