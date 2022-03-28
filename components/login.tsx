@@ -72,8 +72,7 @@ const Login = (props) => {
         )
         .then((res) => {
           localStorage.setItem('token', JSON.stringify(res.token));
-          console.log('ffffffffff');
-          localStorage.setItem('timer', 10000);
+          localStorage.setItem('timer', Date.now());
           dispatch({ type: 'SET_LOGGEDIN', payload: true });
           // dispatch({ type: 'SET_TIMER', payload: 10000 });
 
